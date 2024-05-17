@@ -4,8 +4,9 @@ import Products from '@/views/Products.vue'
 import Categories from '@/views/Categories.vue'
 import EditarProduct from '../components/Product/EditarProduct.vue'
 import NewProduct from '../components/Product/NewProduct.vue'
-import EditCategorie from '../components/categorie/EditarCategorie.vue'
-import NewCategorie from '../components/categorie/NewCategorie.vue'
+import EditCategorie from '../components/Categorie/EditarCategorie.vue'
+import NewCategorie from '../components/Categorie/NewCategorie.vue'
+import Clientes from '@/views/Clientes.vue'
 
 
 const routes = [
@@ -55,6 +56,11 @@ const routes = [
   },
 
 
+  {
+    path: '/clientes',
+    name: 'Clientes',
+    component: Clientes
+  },
 
 
 
