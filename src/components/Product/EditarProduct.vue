@@ -11,7 +11,7 @@
             <div class="row mb-3">
                 <label for="id" class="form-label">Codigo</label>
                 <div class="input-group">
-                    <div class="input-group-text"> <font-awesome-icon icon="tag" /></div> 
+                    <div class="input-group-text"> <font-awesome-icon icon="tag"/></div> 
                     <input type="text" class="form-control" id="id" placeholder="codigo product" disabled  
                         v-model='product.id'
                     >                 
@@ -67,6 +67,9 @@
 <script>
 import axios from 'axios'
 import Swal from 'sweetalert2'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faBank, faBuilding, faPencil, faPlus, faTag, faTrash, faUser } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 export default {
     name: 'EditarProduct',

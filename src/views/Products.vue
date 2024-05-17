@@ -4,6 +4,7 @@
             <button @click="newProduct()"
                     class="btn btn-succes mx-2">
                     <font-awesome-icon icon="plus"/>
+                     
             </button>
         </h1> 
         <table class="table">
@@ -49,7 +50,8 @@
 <script>
  
 import axios from 'axios'
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2' 
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
  
 
 export default {
