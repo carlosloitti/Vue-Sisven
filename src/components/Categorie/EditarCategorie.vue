@@ -6,7 +6,7 @@
             Categoria
         </div>
         <div class="card-body">
-            <form @submit.prevent="updateProduct">
+            <form @submit.prevent="updateCategorie">
     
                 <div class="row mb-3">
                     <label for="id" class="form-label">Codigo</label>
@@ -55,7 +55,7 @@
         name: 'EditarCategorie',
         data(){
             return{
-                products: {
+                categories: {
                     id:0,
                     name: '',
                     descripcion: '',
@@ -71,7 +71,7 @@
          this.$router.push({name: 'Categories'})
         },
     
-        async updateProduct(){
+        async updateCategorie(){
             const res = await axios.put(`http://127.0.0.1:8000/api/categories/${this.categories.id}`, this.categorie)
     
             if (res.status == 200) {
@@ -79,7 +79,7 @@
             Swal.fire({
                 position: 'top-end',
                 icon: 'success',
-                title: 'Product has been updated',
+                title: 'Categorie has been updated',
                 showConfirmButton: false,
                 timer: 2000
                 })

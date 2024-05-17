@@ -4,6 +4,9 @@ import Products from '@/views/Products.vue'
 import Categories from '@/views/Categories.vue'
 import EditarProduct from '../components/Product/EditarProduct.vue'
 import NewProduct from '../components/Product/NewProduct.vue'
+import EditCategorie from '../components/categorie/EditarCategorie.vue'
+import NewCategorie from '../components/categorie/NewCategorie.vue'
+
 
 const routes = [
   {
@@ -42,13 +45,13 @@ const routes = [
   {
     path: '/editar-categorie/:id',
     name: 'EditarCategorie',
-       
+    component:  EditCategorie 
   },
 
   {
     path: '/add-categorie/',
     name: 'NewCategorie',
-    
+    component:  NewCategorie 
   },
 
 
