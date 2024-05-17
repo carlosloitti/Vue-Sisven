@@ -2,7 +2,8 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Products from '@/views/Products.vue'
 import Categories from '@/views/Categories.vue'
-
+import EditarProduct from '../components/Product/EditarProduct.vue'
+import NewProduct from '../components/Product/NewProduct.vue'
 
 const routes = [
   {
@@ -22,6 +23,19 @@ const routes = [
     name: 'Products',
     component: Products
   },
+
+  {
+    path: '/editar-product/:id',
+    name: 'EditarProduct',
+    component: EditarProduct
+  },
+
+  {
+    path: '/add-product/',
+    name: 'NewProduct',
+    component: NewProduct
+  },
+
 
 
 
