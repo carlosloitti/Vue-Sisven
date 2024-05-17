@@ -7,7 +7,7 @@ import NewProduct from '../components/Product/NewProduct.vue'
 import EditCategorie from '../components/Categorie/EditarCategorie.vue'
 import NewCategorie from '../components/Categorie/NewCategorie.vue'
 import Clientes from '@/views/Clientes.vue'
-
+import Pay from '@/views/Pay.vue'
 
 const routes = [
   {
@@ -62,7 +62,11 @@ const routes = [
     component: Clientes
   },
 
-
+  {
+    path: '/pays',
+    name: 'Pays',
+    component: Pay
+  },
 
 
   {
