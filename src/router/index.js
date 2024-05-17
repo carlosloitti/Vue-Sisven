@@ -40,6 +40,23 @@ const routes = [
 
 
   {
+    path: '/editar-categorie/:id',
+    name: 'EditarCategorie',
+       
+  },
+
+  {
+    path: '/add-categorie/',
+    name: 'NewCategorie',
+    
+  },
+
+
+
+
+
+
+  {
     path: '/about',
     name: 'about',
     // route level code-splitting

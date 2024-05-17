@@ -64,7 +64,7 @@ export default {
 
     methods: {
 
-deleteComuna(codigo) {
+deleteProduct(codigo) {
     Swal.fire({
     title: `Do you want to delete the Product with id ${codigo}?`,
     showCancelButton: true,
