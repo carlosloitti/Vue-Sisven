@@ -1,6 +1,7 @@
 <template>
     <div class="container">
         <h1>Listado de Categorias</h1> 
+        
         <table class="table">
             <thead>
             <tr>
@@ -13,12 +14,14 @@
             <tr v-for="(categorie,index) in categories" :key="index">
                 <th scope="row">{{ index+1}}</th>                
                 <td>{{ categorie.name}}</td>
-                <td>{{ categorie.descripcion}}</td>              
+                <td>{{ categorie.descripcion}}</td>            
                     
             </tr>
             </tbody>
 
+
         </table>
+
 
     </div>
 
